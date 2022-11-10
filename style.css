@@ -138,7 +138,7 @@ nav input{
     
 }
 .home ul li{
-    margin:0px 0px;
+    margin:15px 0px;
     padding:10px 0px;
 }
 .home a{
@@ -149,7 +149,7 @@ nav input{
     width: 120px;
     display: block;
     text-align: center;
-    padding: 10px;
+    padding: 7px;
 }
 .home a:hover{
     border: none;
@@ -161,6 +161,8 @@ nav input{
 .home div{
     width: 40%;
     margin:20px auto;
+    font-size: large;
+    text-align: justify;
 }
 .booksCont{
     background-image:url('./images/library-book-svgrepo-com.svg');
