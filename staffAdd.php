@@ -31,26 +31,26 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add staff</title>
 </head>
 
 <body>
-    <?php include "sideBar.php"; ?>
+    <?php include "navbar.php"; ?>
 
     <main>
         <div class="addStaff">
             <h2>Add New Staff</h2>
-            <h3><?php echo $msg; ?></h3>
+            <h3 style="background:green; color:#fff"><?php echo $msg; ?></h3>
 
             <form method="post">
                 <div><label for="fn">Firstname: </label>
-                    <input type="'text" id="fn" class="input" placeholder="Firstname" name="Firstname" />
+                    <input type="text" id="fn" class="input" placeholder="Firstname" name="Firstname" />
                 </div>
-                <div><label for="ln">Lasstname: </label>
-                    <input id="ln" type="'text" class="input" placeholder="Lastname" name="Lastname" />
+                <div><label for="ln">Lastname: </label>
+                    <input id="ln" type="text" class="input" placeholder="Lastname" name="Lastname" />
                 </div>
                 <div><label for="mn">Middle name: </label>
-                    <input type="'text" class="input" placeholder="Middlename" name="Middlename" />
+                    <input type="text" class="input" placeholder="Middlename" name="Middlename" />
                 </div>
                 <div><label for="gender">Gender: </label>
                     <input type="radio" placeholder="Gender" name="Gender" value="Male" />Male

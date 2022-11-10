@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-    <?php include "sideBar.php"; ?>
+    <?php include "navbar.php"; ?>
 
     <main>
         <div class="addStaff">

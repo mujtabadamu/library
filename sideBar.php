@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./fontawesome/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
 
 </head>
 
@@ -17,7 +19,7 @@
                 <li> <a href="index.php">Home </a> </li>
                 <li><a href="book.php">Books</a></li>
                 <li><a href="staff.php">Staff </a></li>
-                <li><a href="">Borrowers </a></li>
+                <li><a href="borrowers.php">Borrowers </a></li>
                 <li> <a href="">About</a></li>
             </ul>
         </div>

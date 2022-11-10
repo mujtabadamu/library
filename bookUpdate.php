@@ -43,38 +43,38 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff</title>
+    <title>Book Update</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     <!----------------Navigation Bar----------------->
-    <?php include 'sideBar.php'; ?>
+    <?php include 'navbar.php'; ?>
     <!----------------End of Navigation bar--------->
     <main>
         <div class="addStaff">
-            <h1>MSG <? echo "TITLE" . $title; ?></h1>
+           
             <div>
 
                 <form method="post">
-                    <div>
+                    <div>Title
                         <input type="text" class="input" placeholder="Title" value="<?php echo $title ?>" name="Title" />
                     </div>
-                    <div>
+                    <div>Author
                         <input type="text" class="input" placeholder="Author" value="<?php echo $author ?>" name="Author" />
                     </div>
-                    <div>
+                    <div>Date of Publication
                         <input type="date" class="input" placeholder="Date of publication" value="<?php echo $DOP ?>" name="DOP" />
                     </div>
 
-                    <div>
+                    <div>Publication
                         <input type="text" class="input" placeholder="Publisher" name="Publisher" value="<?php echo $publisher ?>" />
                     </div>
-                    <div>
+                    <div>ISBN
                         <input type="text" class="input" placeholder="ISBN" name="ISBN" value="<?php echo $ISBN ?>" />
                     </div>
-                    <div>
+                    <div>Pagination
                         <textarea name="Pagination" class="input" placeholder="Pagination"><?php echo $pagination ?></textarea>
                     </div>
                     <div><label for="ph">Shelf: </label>

@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <?php include 'sideBar.php' ?>
+    <?php include 'navbar.php' ?>
 
-    <main>
+    <main class='searchDiv'>
         <div>
             <h3>Search and Delete Staff</h3>
             <form method="GET" class="searchForm">
-                <input type="search" placeholder="search by name" name="search" /><button><i class="fa fa-search" aria-hidden="true"></i></button>
+                <input type="search" placeholder="search by first or lastname" name="search" /><button><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
             <table border="1px">
                 <thead>
@@ -66,7 +66,7 @@
                             }
                         } else {
                             echo '<tr>
-                                    <td colspan="5">No Record Found</td>
+                            <td colspan="12" style="background:red; color:#fff"><center>No Record Found</center></td>
                                 </tr>';
                         }
                     }

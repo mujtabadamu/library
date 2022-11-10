@@ -6,26 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staff</title>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <!----------------Navigation Bar----------------->
-    <?php include 'sideBar.php'; ?>
+    <?php include 'navbar.php'; ?>
     <!----------------End of Navigation bar--------->
     <main>
         <div class="mainStaff">
             <div>
-                <a href="bookAdd.php"><i class="fa fa-book fa-7x" aria-hidden="true"></i>
-
+                <a href="bookAdd.php"><i class="fa fa-book fa-5x" aria-hidden="true"></i>
+                <p>Add book</p>
+                </a>
             </div>
             <div>
-                <a href="bookRecord.php"><i class="fa fa-list-alt fa-7x" aria-hidden="true"></i></a>
+                <a href="bookRecord.php"><i class="fa fa-list-alt fa-5x" aria-hidden="true"></i>
+                <p>View all</p>
+                </a>
             </div>
 
             <div>
-                <a href="staffSearch.php"><i class="fa fa-search fa-7x" aria-hidden="true"></i></a>
+                <a href="bookSearch.php"><i class="fa fa-search fa-5x" aria-hidden="true"></i>
+                <p>Search book</p>
+                </a>
             </div>
 
         </div>

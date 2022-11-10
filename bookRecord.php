@@ -13,10 +13,10 @@
 
 <body>
 
-    <?php include 'sideBar.php' ?>
+    <?php include 'navbar.php' ?>
 
-    <main>
-        <h3>Staff Table Record</h3>
+    <main class='records'>
+        <h3>Books Record</h3>
         <table border="1px">
             <thead>
                 <tr>
@@ -60,7 +60,7 @@
                       
                         <td>
                         <button class="update"><a href="bookUpdate.php?bookId=' . $id . '">Update</a></button>
-                        <button class="delete"><a href="delete.php?staffid=' . $id . '">Delete</a></button>
+                        <button class="delete"><a href="bookDelete.php?bookId=' . $id . '">Delete</a></button>
                     </td>
                     </tr>';
                     }
@@ -68,20 +68,7 @@
                 ?>
             </tbody>
         </table>
-        </div>
-
-        <div id="Paris" class="tabcontent">
-
-
-        </div>
-
-        <div id="Tokyo" class="tabcontent">
-
-        </div>
-        </div>
-
-
-
+     
     </main>
 
 </body>

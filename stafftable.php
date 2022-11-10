@@ -13,9 +13,9 @@
 
 <body>
 
-    <?php include 'sideBar.php' ?>
+    <?php include 'navbar.php' ?>
 
-    <main>
+    <main class="records" >
         <h3>Staff Table Record</h3>
         <table border="1px">
             <thead>
@@ -61,7 +61,7 @@
                         <td>' . $add . '</td>
                         <td>
                         <button class="update"><a href="staffUpdateForm.php?staffId=' . $id . '">Update</a></button>
-                        <button class="delete"><a href="delete.php?staffid=' . $id . '">Delete</a></button>
+                        <button class="delete"><a href="staffDelete.php?staffid=' . $id . '">Delete</a></button>
                     </td>
                     </tr>';
                     }

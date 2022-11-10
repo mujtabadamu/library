@@ -46,28 +46,28 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff</title>
+    <title>Staff Update</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     <!----------------Navigation Bar----------------->
-    <?php include 'sideBar.php'; ?>
+    <?php include 'navbar.php'; ?>
     <!----------------End of Navigation bar--------->
     <main>
         <div class="addStaff">
             <div>
                 <h2>Update Staff Records ID: <?php echo $id; ?> </h2>
                 <form method="post">
-                    <div>
-                        <input type="'text" class="input" placeholder="Firstname" value="<?php echo $fname ?>" name="Firstname" />
+                    <div>Firstname
+                        <input type="text" class="input" placeholder="Firstname" value="<?php echo $fname ?>" name="Firstname" />
                     </div>
-                    <div>
-                        <input type="'text" class="input" placeholder="Lastname" value="<?php echo $lname ?>" name="Lastname" />
+                    <div>Lastname
+                        <input type="text" class="input" placeholder="Lastname" value="<?php echo $lname ?>" name="Lastname" />
                     </div>
-                    <div>
-                        <input type="'text" class="input" placeholder="Middlename" value="<?php echo $mname ?>" name="Middlename" />
+                    <div>Middlename
+                        <input type="text" class="input" placeholder="Middlename" value="<?php echo $mname ?>" name="Middlename" />
                     </div>
                     <div>Gender:
                         <input type="radio" placeholder="Gender" name="Gender" value="Male" <?php if ($Gender == 'Male') echo 'checked="checked" ' ?> />Male
@@ -76,13 +76,14 @@ if (isset($_POST['submit'])) {
                     <div><label>Date of Birth</label>
                         <input type="date" class="input" placeholder="DOB" name="DOB" value="<?php echo $DOB ?>" />
                     </div>
-                    <div>
-                        <input type="'text" class="input" placeholder="Phonenumber" name="Phonenumber" value="<?php echo $Ph ?>" />
+                    <div>Phone number 
+                        <input type="text" class="input" placeholder="Phonenumber" name="Phonenumber" value="<?php echo $Ph ?>" />
                     </div>
-                    <div>
-                        <input type="'text" class="input" placeholder="Status" name="Status" value="<?php echo $Status ?>" />
+                    <div>Status:
+                        <input type="radio" name="Status" value="Single" <?php if ($Status == 'Single') echo 'checked="checked" ' ?> />Single
+                        <input type="radio" name="Status" value="Married" <?php if ($Status == 'Married') echo 'checked="checked" ' ?> />Married
                     </div>
-                    <div>
+                    <div>Address
                         <textarea name="Address" class="input" placeholder="Address"><?php echo $Add ?></textarea>
                     </div>
                     <button class="submit" name="submit">Update</button>

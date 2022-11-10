@@ -12,7 +12,7 @@
 
 <body>
     <!----------------Navigation Bar----------------->
-    <?php include 'sideBar.php'; ?>
+    <?php include 'navbar.php'; ?>
     <!----------------End of Navigation bar--------->
 
     <main>
