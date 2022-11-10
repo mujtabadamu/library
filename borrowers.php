@@ -15,7 +15,7 @@
     <!----------------Navigation Bar----------------->
     <?php include 'navbar.php'; ?>
     <!----------------End of Navigation bar--------->
-    <main>
+    <main class="borrowersCont">
         <div class="mainStaff">
             <div>
                 <a href="borrowersAdd.php"><i class="fa fa-book fa-5x" aria-hidden="true"></i>

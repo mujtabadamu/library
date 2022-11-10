@@ -43,26 +43,26 @@ if (isset($_POST['submit'])) {
             <h3 style="background:green; color:white"><?php echo $msg; ?></h3>
 
             <form method="post">
-                <div><label for="fn">Title: </label>
-                    <input type="'text" id="fn" class="input" placeholder="Title" name="Title" />
+                <div><label for="fn">Title </label>
+                    <input type="text" id="fn" class="input" placeholder="Title" name="Title" />
                 </div>
-                <div><label for="ln">Author: </label>
-                    <input id="ln" type="'text" class="input" placeholder="Author" name="Author" />
+                <div><label for="ln">Author </label>
+                    <input id="ln" type="text" class="input" placeholder="Author" name="Author" />
                 </div>
                 <div><label for="dob">Date of Publication</label>
                     <input type="date" class="input" placeholder="DOP" name="DOP" />
                 </div>
-                <div><label for="mn">Publisher: </label>
+                <div><label for="mn">Publisher </label>
                     <input type="text" class="input" placeholder="Publisher" name="Publisher" />
                 </div>
-                <div><label for="isbn">ISBN: </label>
+                <div><label for="isbn">ISBN </label>
                     <input type="text" class="input" id="isbn" placeholder="ISBN" name="ISBN" />
                 </div>
 
-                <div><label for="ph">Pagination: </label>
+                <div><label for="ph">Pagination </label>
                     <input type="number" class="input" id="ph" placeholder="Pagination" name="Pagination" />
                 </div>
-                <div><label for="ph">Shelf: </label>
+                <div><label for="ph">Shelf </label>
                     <input type="text" class="input" id="ph" placeholder="Shelf" name="Shelf" />
                 </div>
 

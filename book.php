@@ -15,7 +15,7 @@
     <!----------------Navigation Bar----------------->
     <?php include 'navbar.php'; ?>
     <!----------------End of Navigation bar--------->
-    <main>
+    <main class='booksCont'>
         <div class="mainStaff">
             <div>
                 <a href="bookAdd.php"><i class="fa fa-book fa-5x" aria-hidden="true"></i>

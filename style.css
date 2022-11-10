@@ -125,7 +125,61 @@ nav input{
     
 }
 
-
+.home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.home ul {
+    display: flex;
+    list-style:none;
+    justify-content: space-between;
+    
+}
+.home ul li{
+    margin:0px 0px;
+    padding:10px 0px;
+}
+.home a{
+    text-decoration: none;
+    background: none;
+    border-radius: 10px;
+    border: 2px solid #103979;
+    width: 120px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.home a:hover{
+    border: none;
+    background: #cab777;
+    color: #fff;
+    transition: .4s;
+    transform: scale(1.1);
+}
+.home div{
+    width: 40%;
+    margin:20px auto;
+}
+.booksCont{
+    background-image:url('./images/library-book-svgrepo-com.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+.staffCont{
+    background-image:url('./images/sitting-woman-flat-concept-illustration.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+.borrowersCont{
+    background-image:url('./images/walking-man-flat-concept-illustration.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
 
 body{
     /* background:rgba(83, 208, 208, 0.237) ; */
@@ -141,18 +195,25 @@ body{
 .mainStaff div a{
     text-decoration: none;
     border: 1px solid lightgray;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     padding: 8px;
     text-align: center;
     border-radius: 5px;
-    width: 150px;
+    width: 200px;
+    height: 180px;
     color: #111;
     box-shadow: 3px 3px 1px 1px grey;
     line-height: 23px;
+    background: #fff;
 }
 
 .mainStaff div a:hover{
     box-shadow: none;
+    color: #cab777;
+    border: none;
 }
 .mainStaff div {
     width: 100px;
@@ -165,7 +226,10 @@ body{
     margin: auto;
 }
 .addStaff h2{
-    text-transform: uppercase;
+    text-transform: capitalize ;
+    color: #103979;
+    font-size: large;
+    margin: 10px 0px;
 }
 .addStaff form{
     width: 500px;
@@ -176,7 +240,7 @@ body{
     border-radius: 5px;
 }
 
-.addStaff form input[type='text'], [type='date']{
+.addStaff form input[type='text'], [type='date'],[type='number']{
     width: 100%;
     padding: 8px;
     margin: 5px 0px;
