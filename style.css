@@ -52,78 +52,25 @@ nav input{
 .bar{
     width: 36px;
     padding:5px 5px;
-    border: 1px solid #111;
+    border: 1px solid #fff;
     margin-right: 40px;
     display: none;
-} 
+    background-color: #fff;
+}
+
 .bars{
     box-sizing: border-box;
     padding: 1.8px;
-    background: #111;
+    background: #103979;
     margin: 2px auto;
     width: 100%;
+    color: #fff;
+
 }
 
 
 
-@media screen and (max-width:780px){
-    nav {
-        position: relative;
-    }
-    .bar{
-        display: block; 
-        position: absolute;
-        right: 0;
-        top: 10px;
-        box-shadow:  1px 1px 1px 1px #111;
-        /* border-radius: 5px; */
-    } 
-    .bar:hover{
-        cursor:pointer;
-        background: #8cb9b8;
-        border: none;
-        box-shadow: none;
-    }
 
-    nav ul{ 
-        background: #cab777;
-        position: absolute;
-        top: 51px;
-        height: 100vh;
-        right: -200%;
-        width: 100%;
-        text-align: center;
-        transition: .6s;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding:10px;
-        }
-    
-    nav ul a{
-        /* color: #000;  */
-    }
-    
-    #bar:checked ~ .nav ul{
-        right: 0%;
-         width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    .nav ul a{
-        width: 100%;
-        text-align: left;
-    }
-    nav ul li:hover{
-        /* background: rgba(0, 0, 0, 0.1); */
-        transition: .2s;
-        color: #38972a;
-        border-bottom: 1px solid #1212;
-        /* border-top: 1px solid #1212; */
-}
-    
-}
 
 .home{
     display: flex;
@@ -340,4 +287,120 @@ body{
     align-items: center;
     height: 24px;
     text-decoration: none;
+}
+.SendMail{
+    background: #103979;
+    padding: 5px;
+    color: #fff;
+}
+
+
+@media screen and (max-width:780px){
+    nav {
+        position: relative;
+    }
+    .bar{
+        display: block; 
+        position: absolute;
+        right: 0;
+        top: 10px;
+       box-shadow:  1px 1px 1px 1px #111;
+        /* border-radius: 5px; */
+    } 
+    .bar:hover{
+        cursor:pointer;
+        background: #8cb9b8;
+        border: none;
+        box-shadow: none;
+    }
+
+    nav ul{ 
+        background: #1950a8;
+        position: absolute;
+        top: 51px;
+        height: 100vh;
+        right: -200%;
+        width: 100%;
+        text-align: center;
+        transition: .6s;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding:10px;
+        }
+    
+    nav ul a{
+        /* color: #000;  */
+    }
+    
+    #bar:checked ~ .nav ul{
+        right: 0%;
+         width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .nav ul a{
+        width: 100%;
+        text-align: left;
+    }
+    nav ul li:hover{
+        /* background: rgba(0, 0, 0, 0.1); */
+        transition: .2s;
+        color: #cab777;
+        border-bottom: 1px solid #1212;
+        /* border-top: 1px solid #1212; */
+}
+.home{
+    flex-direction: column;
+}
+.home div{
+    width: 90%;
+    /* background: red; */
+}
+.home ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.home ul li{
+    /* background: red; */
+    margin: 4px auto;
+}
+.home a{
+    padding: 2px;
+    width: 100px;
+}
+.mainStaff{
+    flex-direction: column;
+}
+.mainStaff div a{
+    width: 160px;
+    height: 160px;
+}
+.addStaff form{
+    width: 80%;
+}
+.addStaff h2{
+    margin: 20px 50px;
+}
+
+.records {
+    /* background: red; */
+    width: 100%;
+    font-size: small;
+}
+.records h3{
+    margin: 10px 7px;
+}
+.searchDiv {
+    /* background: red; */
+    margin: 20px 5px;
+}
+.searchDiv table{
+    /* background: red; */
+    width: 100%;
+    font-size: small;
+}
+
 }

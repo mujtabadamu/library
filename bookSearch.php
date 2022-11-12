@@ -8,6 +8,9 @@
     <title>Search Staff Records</title>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <script defer src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -36,7 +39,7 @@
                 <tbody>
                     <?php
                     include './util/connect.php';
-
+                   
                     if (isset($_GET['search'])) {
                         $search = $_GET['search'];
 
@@ -64,7 +67,10 @@
                             }
                         } else {
                             echo '<tr>
-                            <td colspan="12" style="background:red; color:#fff"><center>No Record Found</center></td>
+                                    <td colspan="12" style="background:red; color:#fff"><center>No Record Found 
+                                    <button 
+                                    style="background: #103910; padding:5px 10px; cursor:pointer; color:#fff";
+                                    onclick="SendMail()">Notify Admin</button></center></td>
                                 </tr>';
                         }
                     }
@@ -74,5 +80,24 @@
         </div>
     </main>
 </body>
+<script>
+(function() {
+emailjs.init("user_o93ItRazAkbIMdUv2ZItA");
+})();
 
+    function SendMail(){
+        console.log('I was press <?php echo $search ;?>');
+        var tempParams = {
+        from_name:  'Admin Mautech',
+        to_name:    'Mujtaba',
+        message:    '<?php echo $search ;?>',
+    }
+
+    emailjs.send('service_mifbi5o', 'template_ev5tx0g', tempParams)
+    .then(function(res){
+        console.log(tempParams);
+       alert('Email Sent successfully')
+    });
+    }
+</script>
 </html>
