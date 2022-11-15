@@ -116,9 +116,7 @@ if (isset($_POST['submit'])) {
 
     </main>
 
-    <footer>
-        <h1>Footer ele</h1>
-    </footer>
+   
 
 </body>
 

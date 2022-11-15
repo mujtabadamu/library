@@ -5,6 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }  
+html {
+    overflow-x: hidden;
+}
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background: #EFF7FF;
@@ -70,9 +73,6 @@ nav input{
 }
 
 
-
-
-
 .home{
     display: flex;
     justify-content: space-around;
@@ -83,7 +83,6 @@ nav input{
     display: flex;
     list-style:none;
     justify-content: space-between;
-    
 }
 .home ul li{
     margin:15px 0px;
@@ -93,11 +92,12 @@ nav input{
     text-decoration: none;
     background: none;
     border-radius: 10px;
-    border: 2px solid #103979;
+    border: 1px solid #1212;
     width: 120px;
     display: block;
     text-align: center;
-    padding: 7px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px #1212;
 }
 .home a:hover{
     border: none;
@@ -105,6 +105,8 @@ nav input{
     color: #fff;
     transition: .4s;
     transform: scale(1.1);
+    box-shadow:none;
+
 }
 .home div{
     width: 40%;
@@ -295,8 +297,49 @@ body{
     color: #fff;
 }
 
+.loginForm{
+    background:#fff;
+    width: 450px;
+    margin:100px auto;
+    padding: 10px;
+    border-radius: 5px;
+   
+}
+.loginForm input{
+    width: 70%;
+    padding:10px 10px;
+    margin:16px auto;
+    display: block;
+    border: 1px solid #111;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+.loginForm button{
+    width: 70%;
+    padding:10px 10px;
+    margin:16px auto;
+    display: block;
+    border: none;
+    box-sizing: border-box;
+    background: #103979;
+    color: #fff;
+    font-weight: bold;
+}
+.errorMsg{
+    color: red;
+    width: 70%;
+    margin:16px auto;
+    display: block;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
 
 @media screen and (max-width:780px){
+    .loginForm{
+        width: 80%;
+    }
+
     nav {
         position: relative;
     }
@@ -369,7 +412,7 @@ body{
     margin: 4px auto;
 }
 .home a{
-    padding: 2px;
+    padding: 6px;
     width: 100px;
 }
 .mainStaff{
@@ -403,5 +446,6 @@ body{
     width: 100%;
     font-size: small;
 }
+
 
 }

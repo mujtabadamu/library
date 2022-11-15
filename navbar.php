@@ -35,6 +35,7 @@
                 <a href="staff.php"><li>Staff</li></a>
                 <a href="borrowers.php"><li>Borrowers</li></a>
                 <a href=""><li>About</li></a>  
+                <a href="index.php"><li>Logout</li></a>  
             </ul>
             </div>
             
