@@ -18,10 +18,9 @@
     <main class='home'> 
         <div class="container">
             <h2>Web base Cataloging System </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Rem dolores nisi libero illo eum corporis sed repudiandae?
-                Aliquam quasi consectetur, reprehenderit, nesciunt
-                iusto cum aspernatur expedita nobis sed voluptatum atque.
+            <p>It is an online web application designed by the researcher to
+manage library operations. It is a program designed with HTML, CSS and JavaScript for
+the front-end and PHP programming language for the back-end development
             </p>
             <ul>
                 <li> <a href='book.php'>Books</a> </li>
