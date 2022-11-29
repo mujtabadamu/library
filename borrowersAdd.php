@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
 
     <main>
         <div class="addStaff">
-            <h2>Add New Borrorwer</h2>
+            <h2>Add New Borrower</h2>
             <h3 style="background:green; color:white; margin:4px 0px;"><?php echo $msg; ?></h3>
 
             <form method="post" class='borrowerForm'>
@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
                 <div><label for="fn">Call Number: </label>
                     <input type="text" id="fn" class="input" placeholder="call number" name="Callnumber" />
                 </div>
-                <div><label for="fn">Title: </label>
+                <div><label for="fn">Book Title: </label>
                     <input type="text" id="fn" class="input" placeholder="Title" name="Title" />
                 </div>
                 <div><label for="ln">Author: </label>
@@ -89,9 +89,9 @@ if (isset($_POST['submit'])) {
                 <div><label for="ph">Phone Number: </label>
                     <input type="text" class="input" id="ph" placeholder="080-xxx-xxx-xxx" name="Phone" />
                 </div>
-                <div><label for="gender">Status: </label>
-                    <input type="radio" name="Status" value="Collect" />Collect
-                    <input type="radio" name="Status" value="Return" />Return
+                <div style="display:none"><label for="gender">Status: </label>
+                    <input type="radio" name="Status" value="Collect" checked />Collect
+                    <!-- <input type="radio" name="Status" value="Return" />Return -->
                 </div>
 
                 <input type="submit" class="submit" name="submit" />

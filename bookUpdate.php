@@ -56,7 +56,7 @@ if (isset($_POST['submit'])) {
         <div class="addStaff">
            
             <div>
-
+                <h2>Update <?php echo $title; ?> Record </h2>
                 <form method="post">
                     <div>Title
                         <input type="text" class="input" placeholder="Title" value="<?php echo $title ?>" name="Title" />

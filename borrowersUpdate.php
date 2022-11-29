@@ -68,29 +68,36 @@ if (isset($_POST['submit'])) {
     <main>
         <div class="addStaff">
             <div>
+            <h2>Update <?php echo $fullname; ?> Record </h2>
              
-                <form method="post">
-                    <div>Call number
-                        <input type="text" class="input" placeholder="Call number" value="<?php echo $call ?>" name="Callnumber" />
-                    </div>
-                    <div>Title
-                        <input type="text" class="input" placeholder="Title" value="<?php echo $title ?>" name="Title" />
-                    </div>
-                    <div>Author
-                        <input type="text" class="input" placeholder="Author" value="<?php echo $author ?>" name="Author" />
-                    </div>
-                    <div><label>Date of Publication</label>
-                    <input type="date" class="input" placeholder="DOP" name="DOP" value="<?php echo $dop ?>" />
-                </div>
-                <div>Publisher
-                        <input type="text" class="input" placeholder="Publisher" name="Publisher" value="<?php echo $publisher ?>" />
-                    </div>
-                    <div>ISBN
-                        <input type="text" class="input" placeholder="ISBN" name="ISBN" value="<?php echo $isbn ?>" />
-                    </div>
-                    <div>Pagination
-                        <input type="text" class="input" placeholder="Pagination" name="Pagination" value="<?php echo $page ?>" />
-                    </div>
+                <form method="post" class="borrowerForm">
+                    <section>
+                        <div>Call number
+                            <input type="text" class="input" placeholder="Call number" value="<?php echo $call ?>" name="Callnumber" />
+                        </div>
+                        <div>Title
+                            <input type="text" class="input" placeholder="Title" value="<?php echo $title ?>" name="Title" />
+                        </div>
+                        <div>Author
+                            <input type="text" class="input" placeholder="Author" value="<?php echo $author ?>" name="Author" />
+                        </div>
+                       <div> <label>Date of Publication</label>
+                        <input type="date" class="input" placeholder="DOP" name="DOP" value="<?php echo $dop ?>" />
+</div>
+<div>Publisher
+        <input type="text" class="input" placeholder="Publisher" name="Publisher" value="<?php echo $publisher ?>" />
+</div>
+<div>ISBN
+        <input type="text" class="input" placeholder="ISBN" name="ISBN" value="<?php echo $isbn ?>" />
+    </div>
+
+</section>
+
+<section>
+                        <div>Pagination
+                            <input type="text" class="input" placeholder="Pagination" name="Pagination" value="<?php echo $page ?>" />
+                        </div>
+
                     <div>Shelf
                         <input type="text" class="input" placeholder="Shelf" name="Shelf" value="<?php echo $shelf ?>" />
                     </div>
@@ -108,7 +115,10 @@ if (isset($_POST['submit'])) {
                         <input type="radio" name="Status" value="Return" <?php if ($status == 'Return') echo 'checked="checked" ' ?> />Return
                     </div>
                     <button class="submit" name="submit">Update</button>
-                </form>
+                   
+                    </section>
+
+                 </form>
             </div>
 
 

@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
     <main>
         <div class="addStaff">
             <div>
-                <h2>Update Staff Records ID: <?php echo $id; ?> </h2>
+                <h2>Update <?php echo $fname; ?>  <?php echo $lname; ?> Record </h2>
                 <form method="post">
                     <div>Firstname
                         <input type="text" class="input" placeholder="Firstname" value="<?php echo $fname ?>" name="Firstname" />

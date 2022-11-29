@@ -15,7 +15,7 @@
 
     <main class='searchDiv'>
         <div>
-            <h3>Search Borrowers  Delete and Update</h3>
+            <h3>Search Borrowers  Delete or Update</h3>
             <form method="GET" class="searchForm">
                 <input type="search" placeholder="search by name or title" name="search" /><button><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>

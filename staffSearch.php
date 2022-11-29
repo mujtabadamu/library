@@ -15,7 +15,7 @@
 
     <main class='searchDiv'>
         <div>
-            <h3>Search and Delete Staff</h3>
+            <h3>Search Staff delete or update</h3>
             <form method="GET" class="searchForm">
                 <input type="search" placeholder="search by first or lastname" name="search" /><button><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>

@@ -30,14 +30,15 @@
 
             <div class="nav">
             <ul>
-                <a href="index.php" ><li>Home</li></a>
+                <a href="home.php" ><li>Home</li></a>
                 <a href="book.php" ><li>Book</li></a>
                 <a href="staff.php"><li>Staff</li></a>
                 <a href="borrowers.php"><li>Borrowers</li></a>
                 <a href=""><li>About</li></a>  
-                <a href="index.php"><li>Logout</li></a>  
+                <a href="index.php" class="logout"><li>Logout</li></a>  
             </ul>
-            </div>
+            
+        </div>
             
             </div>
     
